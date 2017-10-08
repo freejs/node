@@ -1,0 +1,14 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "'http://a.com/topic?id=1'을 ***URL***이라고 부릅니다.\r 'http'는 ***프로토콜***이라고 부릅니다.\r '?id=1'을 ***쿼리 스트링***이라 부릅니다.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
