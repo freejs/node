@@ -1,0 +1,16 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "static과 dynamic의 적절한 조화가 바로 템플릿 엔진입니다.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "jade": "^1.11.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}
