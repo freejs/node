@@ -48,7 +48,8 @@ https://www.npmjs.com
 
 **독립적 모듈 사용 방법**
 
-`uglify-js`ㅡ 못생기게 만들다. 코드의 모든 공백을 없애다.  
+`uglify-js`ㅡ 못생기게 만들다. 코드의 모든 공백을 없애다.
+`beautify`ㅡ 반대.   
 
 설치 시  
 
@@ -74,4 +75,10 @@ underscore.js 사용.
 
 `-save`ㅡ 해당 모듈을 package.JASON 안에 dependency 항목으로 추가하기 때문에 이 프로젝트의 의존성을 명시적으로 표시해서 프로젝트를 다른 디렉토리에서 사용할 때에도 의존성을 갖고 있는 패키지를 쉽게 갖고 올 수 있는 기능을 제공한다. 뭔말.  
 
-`npm init`ㅡ npm 패키지로 초기화.  
+package.jason 에 추가가 된다. 안 넣으면 추가가 안되고, node_modules 폴더에 설치만 된다.  
+
+`npm init`ㅡ npm 패키지로 초기화. 현재 폴더에 package.jason 파일을 만든다.  
+
+`-dev`ㅡ 옵션은 순순하게 개발을 위한. 배포할 때에는 필요없다. 사용자 측에서는 필요 없음. 예를 들어 supervisor 같은 것.  
+
+entry point 는 항상 맞춰주는 것이 좋다.  
