@@ -16,6 +16,8 @@ fs.readFile('data.txt', {encoding:'utf8'}, function(err, data){
 console.log(4);
 ```
 
+비동기 처리를 콜백으로 한다.  
+
 ```
 1
 2
