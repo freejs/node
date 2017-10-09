@@ -29,3 +29,6 @@ app.get('/topic', function(req, res){
   res.send(output); //쿼리스트링
 });
 ```
+
+
+`req.query.`를 통해 쿼리 값을 받는다.  
