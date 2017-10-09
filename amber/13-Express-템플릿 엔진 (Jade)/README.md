@@ -12,3 +12,6 @@ html
       li coding
   div= time
 ```
+
+**send 와 render 차이**  
+send 는 string 그대로 전송. render 는 html 로. 
