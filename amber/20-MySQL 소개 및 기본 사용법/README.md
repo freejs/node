@@ -33,3 +33,7 @@ use o2;
 
 기본 명령어 4가지  
 SELECT, INSERT, DELETE, UPDATE  
+
+### node-mysql
+
+`npm install --save node-mysql`
