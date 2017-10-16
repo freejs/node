@@ -1,0 +1,15 @@
+{
+  "name": "20-mysql",
+  "description": "<https://opentutorials.org/course/2136/12020>",
+  "version": "1.0.0",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "mysql": "^2.15.0"
+  }
+}
