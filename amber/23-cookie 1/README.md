@@ -8,3 +8,6 @@
 `쿠키 - session - 인증`  
 
 쿠키를 만들어보자.  
+
+쿠키 모듈 다운  
+`npm install cookie-parser --save`
