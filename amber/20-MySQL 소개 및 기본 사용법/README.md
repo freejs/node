@@ -105,3 +105,28 @@ connection.query(sql, params, function(err, rows, fields){
 connection.end();
 
 ```
+
+```Javascript
+var sql = 'update topic set title=?, author=? where id=?';
+var params = ['Ock', 'jarad', 4];
+connection.query(sql, params, function(err, rows, fields){
+  if(err){
+    console.log(err);
+  } else{
+    console.log(rows);
+  }
+});
+
+```
+
+```Javascript
+var sql = 'delete from topic where id=?';
+var params = [5];
+connection.query(sql, params, function(err, rows, fields){
+  if(err){
+    console.log(err);
+  } else{
+    console.log(rows);
+  }
+});
+```
