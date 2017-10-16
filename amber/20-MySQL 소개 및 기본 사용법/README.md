@@ -36,4 +36,72 @@ SELECT, INSERT, DELETE, UPDATE
 
 ### node-mysql
 
-`npm install --save node-mysql`
+node-mysql 모듈 설치.  
+`npm install --save node-mysql`  
+
+JS를 이용해서 mysql 제어하기  
+
+`node database.js`  
+
+
+```Javascript
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+  host : 'localhost',
+  user : 'root',
+  password : '153971',
+  database : 'o2'
+});
+connection.connect();
+```
+
+```Javascript
+var sql = 'SELECT * FROM topic';
+connection.query(sql, function(err, rows, fields){
+  if(err){
+    console.log(err);
+  } else {
+    console.log('rows', rows);
+    console.log('fields', fields);
+  }
+});
+```
+
+```Javascript
+var sql = 'SELECT * FROM topic';
+connection.query(sql, function(err, rows, fields){
+  if(err){
+    console.log(err);
+  } else {
+    for(var i=0; i<rows.length; i++){
+      console.log(rows[i].author); //author 값 가져오기
+    }
+  }
+});
+```
+
+```Javascript
+var sql = 'insert into topic(title, description, author) values("NodeJS", "Server Side Javascript", "brad pitt")';
+connection.query(sql, function(err, rows, fields){
+  if(err){
+    console.log(err);
+  } else{
+    console.log(rows.insertId);
+  }
+});
+```
+
+```Javascript
+var sql = 'insert into topic(title, description, author) values(?, ?, ?)';
+var params = ['Supervisor', 'Watcher', 'graphittie'];
+connection.query(sql, params, function(err, rows, fields){
+  if(err){
+    console.log(err);
+  } else{
+    console.log(rows.insertId);
+  }
+});
+
+connection.end();
+
+```
