@@ -1,0 +1,8 @@
+{
+  "name": "Database-MySQL",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  }
+}
