@@ -17,4 +17,7 @@ Session은 쿠키를 개선한 방식.
 
 말 좀 저장해야겠다.
 
-즉, 세션도 결국은 쿠키를 바탕으로 한다.
+즉, 세션도 결국은 쿠키를 바탕으로 한다.  
+
+
+`npm install express-session --save`  
