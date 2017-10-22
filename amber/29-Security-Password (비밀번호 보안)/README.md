@@ -34,3 +34,6 @@ var users = [
 
 현시점에서 사용하기 좋은 암호화는 SHA이다.  
 `npm install sha256 --save`  
+
+
+PBKDF2가 뭘까.  
